@@ -3,6 +3,7 @@ package es3;
 import es3.exceptions.BancaException;
 
 public class ContoCorrente {
+
     String titolare;
     int nMovimenti;
     final int maxMovimenti = 50;

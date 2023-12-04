@@ -1,9 +1,13 @@
 package es1;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
 
         int[] array = new int[5];
@@ -13,7 +17,7 @@ public class Main {
             array[i] = rndm.nextInt(10) + 1;
         }
 
-        System.out.println("Questo è l'array iniziale: ");
+        log.info("Questo è l'array iniziale: ");
         stampaArray(array);
 
         Scanner scanner = new Scanner(System.in);
@@ -21,24 +25,24 @@ public class Main {
 
 
             try{
-                System.out.println("Inserire un numero da 1 a 10 (0 per uscire dal programma)");
+                log.info("Inserire un numero da 1 a 10 (0 per uscire dal programma)");
                 valoreInserito = Integer.parseInt(scanner.nextLine());
 
                 if( valoreInserito != 0){
-                    System.out.println("In che posizione da 1 a 5 vuoi inserire il numero?");
+                    log.info("In che posizione da 1 a 5 vuoi inserire il numero?");
                     int posizione = Integer.parseInt(scanner.nextLine());
 
                     if(posizione >= 1 && posizione <= array.length){
                         array[posizione - 1 ] = valoreInserito;
 
-                        System.out.println("Questo è l'array aggiornato: ");
+                        log.info("Questo è l'array aggiornato: ");
                         stampaArray(array);
                     }else{
-                        System.out.println("Errore! Posizione non disponibile!");
+                        log.error("Errore! Posizione non disponibile!");
                     }
                 }
             }catch (ArrayIndexOutOfBoundsException ex){
-                System.out.println("Errore! Inserisci una posizione valida!");
+                log.error("Errore! Inserisci una posizione valida!");
             }
 
         scanner.close();

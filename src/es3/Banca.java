@@ -1,8 +1,11 @@
 package es3;
 
 import es3.exceptions.BancaException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Banca {
+    private static final Logger log = LoggerFactory.getLogger(Banca.class);
     public static void main(String[] args) {
         ContoCorrente conto1 = new ContoCorrente("Grossi Mario", 20000.0);
 
@@ -10,9 +13,9 @@ public class Banca {
 
         try{
             conto1.preleva(1750.5);
-            System.out.println("Saldo conto: " + conto1.restituisciSaldo());
+            log.info("Saldo conto: " + conto1.restituisciSaldo());
         }catch(BancaException e){
-            System.out.println("Errore durante il prelievo: " + e);
+            log.error("Errore durante il prelievo: " + e);
             e.printStackTrace();
         }
 
@@ -24,7 +27,7 @@ public class Banca {
             conto2.preleva(2000);
             conto2.stampaSaldo();
         }catch(BancaException e ){
-            System.out.println("Errore durante il prelievo: " + e);
+            log.error("Errore durante il prelievo: " + e);
             e.printStackTrace();
         }
     }
