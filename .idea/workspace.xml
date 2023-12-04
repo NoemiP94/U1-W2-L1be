@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5d712a2-be4d-499c-a409-67760d3d5c16" name="Changes" comment="add third exercise">
-      <change beforePath="$PROJECT_DIR$/src/es3/Banca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es3/Banca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es3/ContoCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es3/ContoCorrente.java" afterDir="false" />
+    <list default="true" id="f5d712a2-be4d-499c-a409-67760d3d5c16" name="Changes" comment="add LogBack library">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,34 +80,22 @@
       <option name="project" value="LOCAL" />
       <updated>1701698836845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add LogBack library">
+      <option name="closed" value="true" />
+      <created>1701699436916</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701699436916</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add first exercise" />
     <MESSAGE value="add second exercise" />
     <MESSAGE value="add third exercise" />
-    <option name="LAST_COMMIT_MESSAGE" value="add third exercise" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/es2/Main.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/es2/Main.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/es2/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add LogBack library" />
+    <option name="LAST_COMMIT_MESSAGE" value="add LogBack library" />
   </component>
 </project>
